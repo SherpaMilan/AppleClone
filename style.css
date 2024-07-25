@@ -1,5 +1,5 @@
 * {
-  font-family: "Source Serif 4", serif;
+  font-family: "Sans Serif 4", serif;
   margin: 0;
   padding: 0;
 }
@@ -23,6 +23,7 @@ body {
 .nav-wrapper {
   display: flex;
   justify-content: space-between;
+  width:100%;
   align-items: center;
   max-width: 1024px;
   margin: 0 auto;
@@ -485,21 +486,17 @@ border-bottom:12px  solid #fff;
 }
 
 
-
-.global-footer  {
-    background: rgb(245, 245, 247);
-    color:rgba(0, 0, 0, 0.56);
-    font-size: 1em;
-}
-
 .color-rgb{
     color: rgba(0, 0, 0, 0.72)
 }
-.footer-contents{
-   
+
+/* footer section  */
+
+.footer-contents{ 
     max-width: 1024px;
      margin: 0 auto;
     padding: 0 22px;
+
 }
 
 ul, li, a{
@@ -576,16 +573,14 @@ ul, li, a{
    padding-top:37px;
     border-top: none;
     padding-bottom:11px;
-    height:98px;
     font-size:12px;
 }
 
 .footer-shop{
   margin-bottom:16px;
   padding-bottom:19px;
-  border-bottom:1px solid  rgba(0, 0, 0, 0.16);
-
-
+  border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+ 
 }
 .country{
   float:right;
@@ -614,6 +609,7 @@ ul, li, a{
 
 .footer-links{ 
    float:left;
+     color: rgba(0, 0, 0, 0.9);
     margin-inline-end: 30px;
     margin-top: 5px;
     list-style-type: none;
@@ -627,32 +623,31 @@ ul, li, a{
  .footer-li{
     float:none;
     position: relative;
-    margin-inline-end: 6px;
+    margin-inline-end: 8px;
     display: inline-block;
     margin-top: 5px;
     font-size: 1em;
 
 } 
- .footer-link{
-       padding-inline-end: 9px;
-    display: inline-block;
-    white-space: nowrap;
-} 
+
 
 
 .color-blue{
   color:rgb(0, 102, 204);
 
 }
-
+ 
 .footer-li:not(:last-child):after {
 
     content: "";
     position: absolute;
+    right:-5px;
     height: 10px;
     width: 1px;
     background-color: rgba(0, 0, 0, 0.48);
     margin: 3px 0;
+
+
 
 }
 .footer-button-title{
@@ -731,15 +726,15 @@ ul, li, a{
 }
   .callout {
   margin-top: 10px;
-
   font-size: 19px;
 
 }
 
-
-  
   .footer-nav-directory{
   flex-direction:column;
+}
+  .footer-contents{
+    padding: 0 9px;
 }
   .flex-basis-25{
   flex-basis: auto;
@@ -749,10 +744,11 @@ ul, li, a{
     display:none;
   }
 
-  .footer-links{ 
-  left:0px;
+  .f-bottom{
+            padding-top: 17px;
+           padding-bottom: 9px;
+  }
 
-}
 
   .footer-button-title{
     
@@ -771,10 +767,7 @@ ul, li, a{
         color:  rgba(0, 0, 0, 0.88);
         float:right;
   }
-  .f-bottom{
-        padding-top: 10px;
 
-}
   .footer-shop{
          margin-bottom: 8px;
         padding-bottom: 8px;
@@ -786,14 +779,19 @@ ul, li, a{
   padding-top:4px;
  
 }
-  .footer-links{
-  float:none;
-
+.copyright{
+  width:100%;
+      padding-bottom:5px;
 }
-  .footer-legal{
-    padding-top:12px;
-
+ 
+  .footer-links{ 
+    float:none;
+    width:100%;
+}
+  .footer-li{
+    padding-bottom:0;
   }
+
   
   
 }
@@ -925,6 +923,9 @@ https://www.apple.com/v/home/bo/images/heroes/bts-2024/hero_tapback_heart__fyumv
   margin-top: 17px;
 
 }
+  .footer-links li{
+    padding-bottom:0;
+  }
 
   .ai-image {
   background: url(https://www.apple.com/v/home/bo/images/heroes/apple-intelligence/hero_ai__fsutbxvuni62_small.jpg)
@@ -981,3 +982,5 @@ https://www.apple.com/v/home/bo/images/heroes/bts-2024/hero_tapback_heart__fyumv
 }
 }
 
+
+ 
